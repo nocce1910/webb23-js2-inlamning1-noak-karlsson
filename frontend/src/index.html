@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sten, Sax, Påse</title>
+   <!--  <link rel="stylesheet" href="./style/css/style.css"> Länkar till en extern CSS-fil för att styla sidan-->
+    <script src="main.js"></script>
+    <!-- Länkar till en extern JavaScript-fil för att hantera interaktiviteten på sidan -->
+</head>
+
+<body>
+    <h1>Sten, Sax, Påse</h1> <!-- Rubrik för spelet -->
+
+    <div id="highscores">
+        <h3>Highscores</h3>
+        <ul id="highscore-list"></ul>
+    </div>
+
+    <form id="game-form"> <!-- Formulär för spelarens namn -->
+        <label for="player-name-input">Ange ditt namn:</label> <!-- Etikett för inmatningsfältet för spelarens namn -->
+        <input type="text" id="player-name-input" required> <!-- Inmatningsfält för spelarens namn -->
+        <button type="submit" id="start-game-btn">Starta spelet</button> <!-- Knapp för att starta spelet -->
+        
+    </form>
+
+
+
+    <div id="game-container" style="display: none;"> <!-- Kontainer för själva spelet -->
+        <h2 id="player-name"></h2> <!-- Rubrik för spelarens namn -->
+        <div> <!-- Container för poängen -->
+            <h3>Poäng</h3>
+            <p id="player-score"></p> <!-- Paragraf för spelarens poäng -->
+            <p id="computer-score"></p> <!-- Paragraf för datorns poäng -->
+        </div>
+        <div> <!-- Container för valen -->
+            <h3>Gör ditt val</h3>
+            <button id="rock-btn">Sten</button> <!-- Knapp för att välja sten -->
+            <button id="paper-btn">Påse</button> <!-- Knapp för att välja påse -->
+            <button id="scissors-btn">Sax</button> <!-- Knapp för att välja sax -->
+        </div>
+        <div> <!-- Container för resultatet -->
+            <h3>Resultat</h3>
+            <p id="result"></p> <!-- Paragraf för att visa resultatet av rundan -->
+            <button id="restart-game-btn" style="display: none;">Starta om spelet</button>
+            <!-- Knapp för att starta om spelet -->
+        </div>
+
+    </div>
+</body>
+
+</html>
